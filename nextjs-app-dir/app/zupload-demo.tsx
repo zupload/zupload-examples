@@ -5,8 +5,6 @@ import { useZupload } from "@zupload/nextjs";
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
-const config = { bucketKey: "YOUR_BUCKET_KEY" };
-
 type ProcessingState = "idle" | "uploading" | "downloading";
 
 function ZuploadDemo() {
@@ -19,7 +17,7 @@ function ZuploadDemo() {
     async (acceptedFiles: File[]) => {
       if (acceptedFiles.length === 0) return;
       setProcessingState("uploading");
-      await upload(acceptedFiles[0], acceptedFiles[0].name);
+      await upload({ file: acceptedFiles[0], key: acceptedFiles[0].name });
       setProcessingState("downloading");
       const { url } = await download(acceptedFiles[0].name);
       setFileUrl(url);

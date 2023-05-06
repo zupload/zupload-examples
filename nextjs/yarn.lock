@@ -344,16 +344,17 @@
     eslint-visitor-keys "^3.3.0"
 
 "@zupload/client@*":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@zupload/client/-/client-0.23.0.tgz#40475d9b09fe1a907441c9f74b6eb360915d08e5"
-  integrity sha512-vZbUaJrVZq54/ZCDiWVznDTwApB1nM0cf9j3d9Hzuru1BRnxkH1AcKBv40tcrvge9fkybm4m2Y+7ryYGB5ra6Q==
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@zupload/client/-/client-0.24.0.tgz#3e20beb914cf292e45e40511063f8b711659848b"
+  integrity sha512-CQq00z6sDd1lqI9zTWmpCvIx7qh/wYpqpVdRuHGmnr//X2DzjvkDxurBIJCFfIH5AquL1QXDtZ0ELyPbxh9Zfw==
   dependencies:
+    promise-throttle "^1.1.2"
     wretch "^2.5.1"
 
-"@zupload/nextjs@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@zupload/nextjs/-/nextjs-0.23.0.tgz#ec1d33c068643bea3c243e25fe7f627d531710a7"
-  integrity sha512-hOm+2/0wckg1osoj9RnrGVDMTvmaqbUYuNdPCSlTkKjcO7QH1h/xyvufgfqJ3u+YNh9ovIVjpyew4KDCMZGBuA==
+"@zupload/nextjs@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@zupload/nextjs/-/nextjs-0.24.0.tgz#05e40de42e6d0c123f5d292d430edb7976880f9d"
+  integrity sha512-e0fk5/lj4ssLHSPW4eNy05KVi0t7E/JFxIePBwo1grNLt4sfZVLF129ClpcBjggk4pP3TBvKVN++zavZybyjKg==
   dependencies:
     "@zupload/client" "*"
     "@zupload/react" "*"
@@ -361,9 +362,9 @@
     react "^18.2.0"
 
 "@zupload/react@*":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@zupload/react/-/react-0.23.0.tgz#6b71d7fcddce0e60d85f8cdc9e34ce1e210419a2"
-  integrity sha512-c8x3EDvOPz+nY4CEnqgZ8TDZeFXj9rLCBpBHX2/htVwQWbe4OYOWptvGjIwpq0PBNPzf5m54urdEfQy6zBC4Ow==
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@zupload/react/-/react-0.24.0.tgz#d0e2b9def78ceaf3b5cf684394d50de1e37fc94e"
+  integrity sha512-NXmQ/2uIDbx2HJPdB7tu4PM6Trcz+HVuxURSI1EDvKQuPnLTpyjsyb+Q2zCdfh32U5aC8pt/4kbkfpqLJU8OGA==
   dependencies:
     "@zupload/client" "*"
     react "^18.2.0"
@@ -2175,6 +2176,11 @@ prelude-ls@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
+
+promise-throttle@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/promise-throttle/-/promise-throttle-1.1.2.tgz#8a59d0424b6f9673aa8405c8b6bd4b5e4f7f71db"
+  integrity sha512-dij7vjyXNewuuN/gyr+TX2KRjw48mbV5FEtgyXaIoJjGYAKT0au23/voNvy9eS4UNJjx2KUdEcO5Yyfc1h7vWQ==
 
 prop-types@^15.8.1:
   version "15.8.1"

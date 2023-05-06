@@ -16,7 +16,7 @@ function Homepage() {
     async (acceptedFiles: File[]) => {
       if (acceptedFiles.length === 0) return;
       setProcessingState("uploading");
-      await upload(acceptedFiles[0], acceptedFiles[0].name);
+      await upload({ file: acceptedFiles[0], key: acceptedFiles[0].name });
       setProcessingState("downloading");
       const { url } = await download(acceptedFiles[0].name);
       setFileUrl(url);
