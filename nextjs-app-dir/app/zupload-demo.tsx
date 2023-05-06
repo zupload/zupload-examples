@@ -1,6 +1,7 @@
 "use client";
 
-import { useDownload, useUpload } from "@zupload/nextjs";
+import { fileRouterConfig } from "@/lib/zupload/routes";
+import { useZupload } from "@zupload/nextjs";
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
@@ -9,8 +10,7 @@ const config = { bucketKey: "YOUR_BUCKET_KEY" };
 type ProcessingState = "idle" | "uploading" | "downloading";
 
 function ZuploadDemo() {
-  const upload = useUpload(config);
-  const download = useDownload(config);
+  const { upload, download } = useZupload(fileRouterConfig);
   const [processingState, setProcessingState] =
     useState<ProcessingState>("idle");
   const [fileUrl, setFileUrl] = useState<string | undefined>();
